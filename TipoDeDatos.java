@@ -1,11 +1,12 @@
 
 
-public class TipoDeDatos{
+public class TipoDeDatos2432432  {
 	public static void main (String args[]){
 
 		System.out.println("Hola\nmundo");
 		System.out.println("Hola\\nmundo");
 		System.out.println("Hola mundo \u0040");
+		
 
 		// Tipo de dato
 		// Nombre de la variable

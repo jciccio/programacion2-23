@@ -1,8 +1,28 @@
-public class Carta{
+public class Carta {
 	// atributos de clase
 	// Declaracion de atributos:
    	private String palo; // un atributo de tipo texto que contiene el palo
    	private int numero; // un atributo de tipo entero que contiene el numero
+
+
+   	public Carta(){
+   		System.out.println("-> Se invoca al constructor por omision");
+   		numero = 7;
+   		palo = "Corazones";
+   	}
+
+   	public Carta(int numeroParametro){
+   		System.out.println("-> Se invoca al constructor que recibe el numero");
+   		numero = numeroParametro;
+   		palo = "Corazones";
+   	}
+   	// Constructor de clase
+
+   	public Carta (int numeroParametro, String paloParametro){
+   		System.out.println("-> Se invoca al constructor que recibe el numero y el palo");
+   		numero = numeroParametro;
+   		palo = paloParametro;
+   	}
 
 	// Metodos
 
