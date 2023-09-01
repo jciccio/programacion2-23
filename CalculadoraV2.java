@@ -3,7 +3,15 @@ public class CalculadoraV2{
 		return numero1 + numero2;
 	}
 
+	public int sumar(int numero1, int numero2){
+		return numero1 + numero2;
+	}
+
 	public double restar(double numero1, double numero2){
+		return numero1 - numero2;
+	}
+
+	public int restar(int numero1, int numero2){
 		return numero1 - numero2;
 	}
 
