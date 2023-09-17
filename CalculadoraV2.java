@@ -48,6 +48,52 @@ public class CalculadoraV2{
 		return libras; 
 	}
 
+	public double calcularPotencia(int base, int potencia){
+		int contador = potencia;
+		double total = (potencia==0&&base==0)? 0.0 : 1.0;
+		if(potencia < 0){
+			contador *= -1;
+		}
+		for(int i = contador; i > 0; i--){
+			total *= base;
+		}
+		if(potencia < 0){
+			total = 1/total;
+		}
+		return total;
+	}
+
+	// si se pasa un numero negativo, la funcion retorna 0
+	public long calcularFactorial(int numero){
+		long total = (numero > 0) ? 1l : 0l; // operador ternario
+		/*if(numero > 0){
+			total = 1;
+		}
+		else{
+			total = 0;
+		}*/
+		int contador = 1;
+		while(contador <= numero){
+			total *= contador; 
+			contador++;
+		}
+		return total;
+	}
+
+	public double calcularSeno(int x, int iteraciones ){
+		double seno = 0.0;
+		int signo = 1;
+		int valor = 1;
+		for(int i = 0; i < iteraciones; i++){
+			double numerador = calcularPotencia(x, valor);
+			long denominador = calcularFactorial(valor);
+			valor += 2;
+			seno += (numerador/denominador) *signo;
+			signo *= -1;
+		}
+		return seno;
+	}
+
 
 
 

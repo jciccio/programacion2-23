@@ -19,7 +19,7 @@ public class Carta {
    	// Constructor de clase
 
    	public Carta (int numeroParametro, String paloParametro){
-   		System.out.println("-> Se invoca al constructor que recibe el numero y el palo");
+   		//System.out.println("-> Se invoca al constructor que recibe el numero y el palo");
    		numero = numeroParametro;
    		palo = paloParametro;
    	}
