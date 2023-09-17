@@ -156,26 +156,22 @@ Ejemplos vistos en clase:
 
 Sobrecarga de métodos (clase Calculadora.java)
 ```java
-public int sumar(int valor1, int valor2){
-   return valor1 + valor2;
-}
+   public double multiplicar(double valor1, double valor2){
+      double resultado = valor2 * valor1;
+      return resultado;
+   }
 
-public int sumar(int valor1, int valor2, int valor3){
-   return valor1 + valor2 + valor3;
-}
+   public int multiplicar(int valor1, int valor2){
+      return valor1*valor2;
+   }
 
-public double sumar(double v1, double v2){
-   double resultado = v1+ v2;
-   return resultado;
-}
+   public double multiplicar(double valor1, int valor2){
+      return valor1*valor2;
+   }
 
-public double sumar(int v1, double v2){
-   return v1 + v2;
-}
-
-public double sumar(double v1, int v2){
-   return v1 + v2;
-}
+   public double multiplicar(int valor1, int valor2, int valor3){
+      return valor1*valor2*valor3;
+   }
 ```
 
 Sobrecarga de constructores (clase Carta.java)
@@ -191,6 +187,7 @@ public Carta(int numero, String palo){
    this.palo = palo;
 }
 ```
+
 
 ### Estructuras de control (__if__, __if/else__)
 
@@ -269,5 +266,56 @@ public String convertirNumeroCarta(){
          valorCarta += this.numero;
    }
    return valorCarta;
+}
+```
+
+### Estructuras de repetición
+
+### Ciclo while
+
+
+```java
+public double calcularPromedioWhile(){
+  double suma = 0;
+  int n = 0; // iteraciones que se harán y servirá como condición de parada
+
+  while(n < 5){
+    suma += interfazUsuario.solicitarNumeroEntero("Digite un numero (while)");
+    n++; // cambio de condición
+  }
+  return suma/5;
+}
+```
+
+### Ciclo do - while
+
+
+
+```java
+public double calcularPromedioDoWhile(){
+  double suma = 0;
+  int n = 0;
+
+  do {
+    suma += interfazUsuario.solicitarNumeroEntero("Digite un numero (do-while)");
+    n++;
+  }while(n < 5);
+  return suma/5;
+}
+```
+### Ciclo for
+
+Ejemplo tomado de la clase Matemáticas
+
+
+```java
+public double calcularPromedioFor(){
+  double suma = 0;
+
+  for (int  n = 0 ; n < 5 ; n++){
+    suma += interfazUsuario.solicitarNumeroEntero("Digite un numero (for)");
+  }
+
+  return suma /5;
 }
 ```
