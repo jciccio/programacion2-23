@@ -1,10 +1,12 @@
 public class Quiz4 {
 	
+	// Pregunta 1
 	public int redondear(double numeroReal){
 		int numeroEntero = (int) numeroReal;
 		return (numeroReal - numeroEntero) >= 0.5 ? numeroEntero + 1 : numeroEntero;
 	}
 
+	// Pregunta 2
 	public double calcularValorPi(int n){
 		double aproximacionPi = 0;
 		if(n > 0){
@@ -20,6 +22,7 @@ public class Quiz4 {
 		return aproximacionPi;
 	}
 
+	// Pruebas para las preguntas del quiz
 	public static void main (String args[]){
 		Quiz4 q4 = new Quiz4();
 		System.out.println("6.21 => " + q4.redondear(6.21));
