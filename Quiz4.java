@@ -2,24 +2,27 @@ public class Quiz4 {
 	
 	// Pregunta 1
 	public int redondear(double numeroReal){
-		int numeroEntero = (int) numeroReal;
+		int numeroEntero = (int) numeroReal; // Para obtener la parte entera, realizamos casting
+		// Si al realizar la resta, el valor es >= 0.5, debemos sumar una unidad, en caso contrario, mantenemos
+		// El valor entero. Para esto, utilizando el operador ternario condicion ? true : false, realizamos
+		// la asignación y retornamos el resultado
 		return (numeroReal - numeroEntero) >= 0.5 ? numeroEntero + 1 : numeroEntero;
 	}
 
 	// Pregunta 2
 	public double calcularValorPi(int n){
-		double aproximacionPi = 0;
-		if(n > 0){
-			double denominador = 1;
-			int signo = 1;
+		double aproximacionPi = 0; // Variable que contiene el resultado
+		if(n > 0){ // Si el valor de N es negativo, retornaremos 0
+			double denominador = 1; // El denominador aumenta de 2 en 2 unidades, necesitamos que sea un valor real
+			int signo = 1; // El signo lo cambiamos al multiplicar por -1, inicia con un valor positivo
 			for(int i = 0 ; i < n; i++){
-				aproximacionPi += (1/denominador * signo);
-				denominador += 2;
-				signo *= -1;
+				aproximacionPi += (1/denominador * signo); // La fracción * el signo, se le suma a la aproximación
+				denominador += 2;// Por cada iteración se le suman dos unidades
+				signo *= -1; // Se realiza el cambio de signo
 			}
-			aproximacionPi *= 4;
+			aproximacionPi *= 4; // Sobre todas las operacions (sumas y restas) se debe multiplicar el resultado por 4
 		}
-		return aproximacionPi;
+		return aproximacionPi; // Se retorna el valor de la aproximación
 	}
 
 	// Pruebas para las preguntas del quiz
