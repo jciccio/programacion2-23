@@ -48,7 +48,7 @@ public class Perro{
 		String datos = "Guau! Me llamo " + nombre  + " y estoy " + estado;
 		return datos;
 	}
-
+	// Comentario que agregué en Sublime
 	public void correr (){
 
 		String estado ="corriendo!\n" 
