@@ -42,6 +42,7 @@ public class Quiz4 {
 		System.out.println("Aproximacion Pi N=30000 es: " + q4.calcularValorPi(30000));
 		System.out.println("Aproximacion Pi N=3000000 es: " + q4.calcularValorPi(3000000));
 		System.out.println("Aproximacion Pi N=300000000 es: " + q4.calcularValorPi(300000000));
+		System.out.println("Aproximacion Pi N=10 es: " + q4.calcularValorPi(10));
 	}
 
 }
