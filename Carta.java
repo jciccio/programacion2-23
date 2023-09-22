@@ -108,7 +108,7 @@ public class Carta {
 	}
 
 	public String toString(){
-		return "La carta es: " +  getNumeroIfElse() + " de " + palo;
+		return "La carta es: " +  getNumeroIfElse() + " de " + palo + "\n";
 	}
 
 
