@@ -1,0 +1,26 @@
+var annotated_dup =
+[
+    [ "Arreglo", "class_arreglo.html", "class_arreglo" ],
+    [ "Calculadora", "class_calculadora.html", "class_calculadora" ],
+    [ "CalculadoraV2", "class_calculadora_v2.html", "class_calculadora_v2" ],
+    [ "Carta", "class_carta.html", "class_carta" ],
+    [ "CartaDoxygen", "class_carta_doxygen.html", "class_carta_doxygen" ],
+    [ "Circulo", "class_circulo.html", "class_circulo" ],
+    [ "Estudiante", "class_estudiante.html", "class_estudiante" ],
+    [ "Interfaz", "class_interfaz.html", "class_interfaz" ],
+    [ "Mazo", "class_mazo.html", "class_mazo" ],
+    [ "Perro", "class_perro.html", "class_perro" ],
+    [ "Persona", "class_persona.html", "class_persona" ],
+    [ "PruebaArreglo", "class_prueba_arreglo.html", null ],
+    [ "PruebaArreglo2", "class_prueba_arreglo2.html", null ],
+    [ "PruebaCalculadora", "class_prueba_calculadora.html", null ],
+    [ "PruebaCalculadora2", "class_prueba_calculadora2.html", null ],
+    [ "PruebaCalculadoraInterfaz", "class_prueba_calculadora_interfaz.html", null ],
+    [ "PruebaCarta", "class_prueba_carta.html", null ],
+    [ "PruebaEstudiante", "class_prueba_estudiante.html", null ],
+    [ "PruebaIf", "class_prueba_if.html", null ],
+    [ "PruebaInterfaz", "class_prueba_interfaz.html", null ],
+    [ "PruebaPerro", "class_prueba_perro.html", null ],
+    [ "Quiz4", "class_quiz4.html", "class_quiz4" ],
+    [ "TipoDeDatos2432432", "class_tipo_de_datos2432432.html", null ]
+];

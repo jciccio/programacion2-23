@@ -1,0 +1,26 @@
+var files_dup =
+[
+    [ "Arreglo.java", "_arreglo_8java.html", "_arreglo_8java" ],
+    [ "Calculadora.java", "_calculadora_8java.html", "_calculadora_8java" ],
+    [ "CalculadoraV2.java", "_calculadora_v2_8java.html", "_calculadora_v2_8java" ],
+    [ "Carta.java", "_carta_8java.html", "_carta_8java" ],
+    [ "CartaDoxygen.java", "_carta_doxygen_8java.html", "_carta_doxygen_8java" ],
+    [ "Circulo.java", "_circulo_8java.html", "_circulo_8java" ],
+    [ "Estudiante.java", "_estudiante_8java.html", "_estudiante_8java" ],
+    [ "Interfaz.java", "_interfaz_8java.html", "_interfaz_8java" ],
+    [ "Mazo.java", "_mazo_8java.html", "_mazo_8java" ],
+    [ "Perro.java", "_perro_8java.html", "_perro_8java" ],
+    [ "Persona.java", "_persona_8java.html", "_persona_8java" ],
+    [ "PruebaArreglo.java", "_prueba_arreglo_8java.html", "_prueba_arreglo_8java" ],
+    [ "PruebaArreglo2.java", "_prueba_arreglo2_8java.html", "_prueba_arreglo2_8java" ],
+    [ "PruebaCalculadora.java", "_prueba_calculadora_8java.html", "_prueba_calculadora_8java" ],
+    [ "PruebaCalculadora2.java", "_prueba_calculadora2_8java.html", "_prueba_calculadora2_8java" ],
+    [ "PruebaCalculadoraInterfaz.java", "_prueba_calculadora_interfaz_8java.html", "_prueba_calculadora_interfaz_8java" ],
+    [ "PruebaCarta.java", "_prueba_carta_8java.html", "_prueba_carta_8java" ],
+    [ "PruebaEstudiante.java", "_prueba_estudiante_8java.html", "_prueba_estudiante_8java" ],
+    [ "PruebaIf.java", "_prueba_if_8java.html", "_prueba_if_8java" ],
+    [ "PruebaInterfaz.java", "_prueba_interfaz_8java.html", "_prueba_interfaz_8java" ],
+    [ "PruebaPerro.java", "_prueba_perro_8java.html", "_prueba_perro_8java" ],
+    [ "Quiz4.java", "_quiz4_8java.html", "_quiz4_8java" ],
+    [ "TipoDeDatos.java", "_tipo_de_datos_8java.html", "_tipo_de_datos_8java" ]
+];
