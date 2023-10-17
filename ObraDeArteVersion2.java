@@ -20,18 +20,12 @@ public class ObraDeArteVersion2 {
     
     imagen = new BufferedImage(ANCHO,ALTO,BufferedImage.TYPE_INT_RGB);
     dibujo = new int[ANCHO][ALTO];
-   getDibujo();
-    
-
+    getDibujo();
     dibujarLinea(100,220, 100,120);
-
     dibujarLinea(200,220,200,320);
-
     dibujarLinea(300,320,300,320);
-    
     for(int i=0;i<ANCHO;i++){
       for(int j=0;j<ALTO;j++){
-        
         switch (dibujo[i][j]) {
           case 0:
             imagen.setRGB(i, j, Color.WHITE.getRGB());
@@ -51,7 +45,7 @@ public class ObraDeArteVersion2 {
           default:
             RGB anaranjado = new RGB(235,186,52);
             imagen.setRGB(i, j, /*Color.GREEN.getRGB()*/ anaranjado.calcularValorFuncional());
-        } //swithc
+        } //switch
       } //for
     } //for
     

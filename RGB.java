@@ -42,7 +42,7 @@ public class RGB{
  }
 
  public int calcularValorFuncional (){
-  return rojo * 256 *256  + verde * 256 + azul;
+  return rojo * 255 *255  + verde * 255 + azul;
  }
 
 
