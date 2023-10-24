@@ -62,7 +62,7 @@ public class Laberinto {
           i++;
         }
         if (!retorno && this.laberinto[coordF][coordC] !='R'){
-            this.laberinto[coordF][coordC] = ' ';
+          this.laberinto[coordF][coordC] = ' ';
         }
       }
       else{//termina
