@@ -93,14 +93,13 @@ public class Buscaminas{
 
 	public String toString(){
 		String contenido = "";
-		for(int f = 0; f < tablero.length; f++){
+		/*for(int f = 0; f < tablero.length; f++){
 			for(int c = 0; c < tablero[f].length; c++){
 				contenido += tablero[f][c] ;
 				contenido += " \t";
 			}
 			contenido += "\r\n";
-		}
-
+		}*/
 		contenido += "\r\n - - -  Tablero Usuario - - - - - \r\n";
 		for(int fila = 0 ; fila < tableroUsuario.length; fila++){
 			for(int col = 0; col <tableroUsuario[fila].length; col++){
@@ -108,7 +107,6 @@ public class Buscaminas{
 			}
 			contenido += "\r\n";
 		}
-
 		return contenido;
 	}
 
@@ -121,7 +119,7 @@ public class Buscaminas{
 			// Pedir una fila
 			// Pedir una columna
 			// Realizar el movimiento
-			perdio = realizarMovimiento(fila, columna, true);
+			perdio = realizarMovimiento(fila, columna, false);
 			// Verificar si gana
 			gano = verificarGanador();
 			// Ciclo de lo anterior
@@ -132,7 +130,7 @@ public class Buscaminas{
 	}
 
 	public static void main (String [] args){
-		Buscaminas buscaminas = new Buscaminas(10,10,1);
+		Buscaminas buscaminas = new Buscaminas(10,10,10);
 		/*System.out.println(buscaminas);
 		buscaminas.llenarTablero();
 		System.out.println(buscaminas);
