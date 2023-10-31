@@ -30,6 +30,10 @@ public class Interfaz{
 		return numero;
 	}
 
+	public String solicitarHilera(String mensaje){
+		return JOptionPane.showInputDialog(mensaje);	
+	}
+
 	public void mostrarDatos(String datos, String titulo){
 		JOptionPane.showMessageDialog(null, datos, titulo, JOptionPane.INFORMATION_MESSAGE);
 	}
