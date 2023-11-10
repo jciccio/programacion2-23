@@ -31,7 +31,10 @@ public class OchoReinas{
 		return valido;
 	}
 
-	public int colocarFicha(int fila, int columna, int cantidad){
+	public int colocarFicha(int fila){
+		return colocarFicha(fila,0,0);
+	}
+	private int colocarFicha(int fila, int columna, int cantidad){
 		if (fila >= 0 && fila < tablero.length && 
 			columna >=0 && columna < tablero[fila].length){
 
@@ -72,7 +75,7 @@ public class OchoReinas{
 
 	public static void main (String args[]){
 		OchoReinas reinas = new OchoReinas();
-		System.out.println("Colocadas final: " + reinas.colocarFicha(0,0,0));
+		System.out.println("Colocadas final: " + reinas.colocarFicha(5));
 		System.out.println(reinas);
 	}
 
