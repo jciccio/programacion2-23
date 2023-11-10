@@ -53,10 +53,25 @@ public class AlgoritmosDeOrdenamiento{
 		return copia;
 	}
 
+	public int[] ordenarInsercion(int [] arreglo){
+		int [] copia = clonar(arreglo);
+		for(int  i = 1;  i < copia.length; i++){
+			int temporal = copia[i];
+			int contador = i - 1;
+			while(contador >= 0 && copia[contador] > temporal){
+				copia[contador+1] =copia[contador];
+				contador--;
+			}
+			copia[contador+1] = temporal;
+		}
+		return copia;
+	}
+
 	public static void main (String [] args){
 		AlgoritmosDeOrdenamiento ao = new AlgoritmosDeOrdenamiento();
 		int [] arregloDesordenado = {1,10,50,3,-9,4999,29,80,100,549,11,1,0};
 		ao.imprimir(ao.ordenarSeleccion(arregloDesordenado));
 		ao.imprimir(ao.ordenarBurbuja(arregloDesordenado));
+		ao.imprimir(ao.ordenarInsercion(arregloDesordenado));
 	}
 }
