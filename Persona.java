@@ -6,7 +6,11 @@ public class Persona{
    // Declaramos el valor privado
    // Definimos qué tipo de dato es
    // Damos un nombre a la variable
-   private String nombre;
+   protected String nombre;
+
+   public Persona (String nombre){
+      this.nombre = nombre;
+   }
 
    // Métodos
    // Acciones o métodos:
@@ -32,21 +36,4 @@ public class Persona{
       return "Hola me llamo " + this.nombre;
    }
 
-
-   public static void main (String args[]){
-      // NombreDeClase nombreInstancia = new NombreClase();
-      Persona persona1 = new Persona();
-      persona1.setNombre("María");
-      persona1.saludar();
-      System.out.println(persona1);
-
-      Persona persona2 = new Persona();
-      persona2.setNombre("Andrés");
-      persona2.saludar();
-
-      Persona persona3 = new Persona();
-      persona3.saludar();
-      persona3.setNombre("Juan");
-      persona3.saludar();
-   }
 }
